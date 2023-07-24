@@ -5,14 +5,13 @@ export default function Tricks({tricks}) {
 
 const allTricks = tricks.map(trick => {
     return  (
-        <div className="trick-card" key={trick.name}>
+        <div className="trick-card" key= {Date.now()}>
 
                <p>{trick.name}</p> 
                <p>Obstacle: {trick.obstacle}</p>
                <p>Link to Tutorial: {trick.tutorial}</p> 
-               <p>{trick.stance}</p>
+               <p className={trick.stance}></p>
         </div>
-  
     )
 })
 
@@ -20,7 +19,7 @@ const allTricks = tricks.map(trick => {
     return (
 
         <div className='trick-container'>
-            <h1>{allTricks}</h1>
+            {allTricks}
         </div>
     )
 }

@@ -5,9 +5,9 @@ import Tricks from './Tricks'
 import Form from './Form'
 
 function App() {
-
   const [tricks, setTricks] = useState([])
 
+  
 useEffect(() => {
  
   fetch('http://localhost:3001/api/v1/tricks')
@@ -16,10 +16,9 @@ useEffect(() => {
     
 },[])
 
+
 function addNewTrick(newTrick) {
   setTricks([...tricks, newTrick])
-  console.log(newTrick)
-  console.log(tricks)
 }
 
 

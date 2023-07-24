@@ -1,13 +1,19 @@
 .trick-card {
-    height:30%;
-    width:50%;
+    height:15vh;
+    width:30%;
     border: 1px solid black;
-    font-size: 30%;
+    font-size: 1.5vh;
     background-color: white;
     
 }
 
 .trick-container {
     display: flex;
-   
+   flex-direction: row;
+   width:90%;
+   height:50%;
+
+   justify-content: space-evenly;
+   padding-top: 6%;
 }
+
