@@ -5,10 +5,12 @@ export default function Tricks({tricks}) {
 
 const allTricks = tricks.map(trick => {
     return  (
-        <div className="trick-card">
-               <p>{trick.name}</p>
+        <div className="trick-card" key={trick.name}>
+
+               <p>{trick.name}</p> 
                <p>Obstacle: {trick.obstacle}</p>
-               <p>Link to Tutorial: {trick.tutorial}</p>
+               <p>Link to Tutorial: {trick.tutorial}</p> 
+               <p>{trick.stance}</p>
         </div>
   
     )
